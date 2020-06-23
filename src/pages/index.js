@@ -1,5 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+export default () => (
+  <>
+    Hello World!
+    <p>
+      <Link to="/blog">View Blog</Link>
+      <Link to="/account">My Account</Link>
+    </p>
+  </>
+)
